@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,700'); /* import Montserrat font  */
 
-body, html{
+body, html {
     font-family: 'Montserrat', sans-serif;
     height: 100;
     margin: 0;
@@ -15,7 +15,7 @@ body, html{
     from {
       background-position: 0 0;
     }
-    to {
+    to {s
       background-position: 100% 0;
     }
   }

@@ -1,0 +1,130 @@
+@import url('http://fonts.cdnfonts.com/css/lulo-clean');
+
+ @media (min-width: 60em) {
+	 .container {
+		 display: flex;
+		 flex-direction: row;
+		 height: 100vh;
+		 min-height: 50rem;
+	}
+}
+ .major {
+	 font-family: 'Lulo Clean', sans-serif;
+	 padding: 8vw;
+	 box-sizing: border-box;
+	 position: relative;
+}
+ @media (min-width: 60em) {
+	 .major {
+		 order: 1;
+		 padding: 4vw;
+		 width: 46vw;
+	}
+}
+ .minor {
+	 height: 50vh;
+	 position: relative;
+	 overflow: hidden;
+	 animation: border-in 5s both cubic-bezier(0.31, 0.11, 0.12, 0.99);
+}
+ @media (min-width: 60em) {
+	 .minor {
+		 order: 2;
+		 height: auto;
+		 width: 54vw;
+	}
+}
+ .image {
+	 position: absolute;
+	 content: '';
+	 top: 0;
+	 bottom: 0;
+	 right: 0;
+	 left: 0;
+	 background: #ededed;
+	 background-size: cover;
+	 z-index: -1;
+	 animation: image-in 4s both;
+	 animation-delay: 500ms;
+}
+ .text {
+	 z-index: 2;
+	 background-color: transparent;
+}
+ @media (min-width: 60em) {
+	 .text {
+		 position: absolute;
+		 top: 20vh;
+		 left: 4vw;
+	}
+}
+ .heading {
+	 padding: 1rem 1rem 1.5rem 1rem;
+	 box-sizing: border-box;
+}
+ @media (min-width: 60em) {
+	 .heading {
+		 padding: 1.5rem 3rem 1.5rem 0;
+		 width: 50vw;
+	}
+}
+ h1 {
+	 font-size: 2rem;
+	 animation: text-in 2s both cubic-bezier(0.31, 0.11, 0.12, 0.99);
+	 animation-delay: 250ms;
+}
+ @media (min-width: 40em) {
+	 h1 {
+		 font-size: 4.75vw;
+	}
+}
+ p {
+	 font-size: 1.25rem;
+	 max-width: 22.5rem;
+	 padding: 0 1rem;
+	 animation: text-in 2s both cubic-bezier(0.31, 0.11, 0.12, 0.99);
+	 animation-delay: 500ms;
+}
+ @media (min-width: 60em) {
+	 p {
+		 padding: 0;
+		 max-width: 40vw;
+	}
+}
+ .more-content {
+	 height: 100vh;
+	 background: grey;
+}
+ body {
+	 margin: 0;
+	 font-smoothing: antialiased;
+}
+ @keyframes border-in {
+	 0% {
+		 box-shadow: inset 0 0 0 white;
+	}
+	 100% {
+		 box-shadow: inset 0 0 0 4vw white;
+	}
+}
+ @keyframes image-in {
+	 0% {
+		 opacity: 0;
+	}
+	 50% {
+		 opacity: 1;
+	}
+	 100% {
+		 transform: scale(1.15);
+	}
+}
+ @keyframes text-in {
+	 0% {
+		 opacity: 0;
+		 transform: translateY(2rem);
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+ 
