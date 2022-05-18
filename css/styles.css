@@ -10,28 +10,28 @@
 }
  .major {
 	 font-family: 'Lulo Clean', sans-serif;
-	 padding: 8vw;
+	 padding: 2vw;
 	 box-sizing: border-box;
 	 position: relative;
 }
  @media (min-width: 60em) {
 	 .major {
-		 order: 1;
+		 order: 2;
 		 padding: 4vw;
-		 width: 46vw;
+		 width: 40vw;
 	}
 }
  .minor {
 	 height: 50vh;
+
 	 position: relative;
-	 overflow: hidden;
-	 animation: border-in 5s both cubic-bezier(0.31, 0.11, 0.12, 0.99);
+	 animation: 5s both cubic-bezier(0.31, 0.11, 0.12, 0.99);
 }
  @media (min-width: 60em) {
 	 .minor {
-		 order: 2;
+		 order: 1;
 		 height: auto;
-		 width: 54vw;
+		 width: 60vw;
 	}
 }
  .image {
@@ -41,27 +41,52 @@
 	 bottom: 0;
 	 right: 0;
 	 left: 0;
-	 background: #ededed;
-	 background-size: cover;
+	 background-color: transparent;
+     background-repeat: no-repeat;
+	 background-size: contain;
 	 z-index: -1;
 	 animation: image-in 4s both;
 	 animation-delay: 500ms;
+     width: 460px;
+     height: auto;
+     margin: 0 auto;
+     margin-top: 200px;
+     background-image: url('../images/rect-big.png');
 }
- .text {
+
+.image2 {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    animation: image-in 4s both;
+    animation-delay: 500ms;
+    margin: 0 auto;
+    background-image: url('../images/box2.png');
+} 
+
+.text {
 	 z-index: 2;
 	 background-color: transparent;
 }
  @media (min-width: 60em) {
 	 .text {
-		 position: absolute;
+		 position: relative;
+         color: white;
 		 top: 20vh;
 		 left: 4vw;
 	}
 }
  .heading {
-	 padding: 1rem 1rem 1.5rem 1rem;
 	 box-sizing: border-box;
 }
+
  @media (min-width: 60em) {
 	 .heading {
 		 padding: 1.5rem 3rem 1.5rem 0;
