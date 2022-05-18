@@ -44,7 +44,7 @@ function init() {
 	// -------------------------------------
 
 	// Sphere Geometry 1
-  sphereGeometry1 = new THREE.BoxGeometry(400, 220, 80, 10);
+  sphereGeometry1 = new THREE.BoxGeometry(300, 150, 140);
 
 	// Sphere Material 1
   var texture = new THREE.TextureLoader().load('images/texture.png');
